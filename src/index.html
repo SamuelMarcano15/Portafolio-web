@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="../assets/stylesheets/styles.css">
+    <title>Samuel Marcano</title>
+</head>
+<body class="bg-slate-900">
+    <header class="bg-neutral-700 navbar">
+        <nav class="flex fixed top-0 z-10  w-full justify-between items-center  bg-neutral-700 mx-auto font-normal" name="navbar">
+            <div >
+                <img class="w-20 ml-6" src="../assets/img/logo portafolio sin fondo.png" alt="...">
+            </div>
+            <div class="nav-links duration-700 md:static absolute bg-neutral-700 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="nav-item" href="#home" name="home">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#sobremi" name="acercaDemi" data-section="navbar" data-value="item2">Acerca de mi</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#formacion" name="formacion" data-section="navbar" data-value="item3">Formación</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#habilidades" name="habilidades" data-section="navbar" data-value="item4">Habilidades</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#proyectos" name="proyectos" data-section="navbar" data-value="item5">Proyectos</a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#contacto" name="contacto" data-section="navbar" data-value="item6">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <div id="flags" class="flags flex justify-between mr-6">
+                    <div class="flag_item cursor-pointer" data-language="es">
+                        <img src="../assets/img/es.svg" alt="..." style="width: 35px; padding-right: 5px;">
+                    </div>
+                    <div class="flag_item cursor-pointer" data-language="en">
+                        <img src="../assets/img/us.svg" alt="..." style="width: 35px; padding-right: 5px;">
+                    </div>
+                </div>
+                <img name="menu" onclick="onToggleMenu(this)" class="w-8 text-3xl cursor-pointer md:hidden" src="../assets/img/menu.svg" alt="...">
+            </div>
+
+            <script>
+                const navLink = document.querySelector('.nav-links')
+                        function onToggleMenu(e){
+                            navLink.classList.toggle('top-[11%]')
+                        }
+            </script>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-slate-900 content-center" id="home">
+            <div class="flex justify-between  container-general mt-32">
+                <div class="containerInf">
+                    <div class="Presentation text-center text-white">
+                        <p class="sayHi" data-section="Home" data-value="saludo">Hola Mundo! Soy</p>
+                        <p class="myName">SAMUEL MARCANO</p>
+                        <div class="speciality">
+                            <span data-section="Home" data-value="rol">Desarrollador Front-End' </span>
+                        </div>
+                </div>
+                <div class="myDescription text-white ">
+                    <p data-section="Home" data-value="descripcion" class="w-[600px] text-lg"> Como estudiante de Ingeniería de Sistemas, me especializo en desarrollo frontend, sistemas y UX/UI. Estoy comprometido con encontrar las soluciones óptimas para crear productos finales excepcionales.</p>
+                </div>
+                <div class="container-btns flex">
+                    <div class="button" data-tooltip="Size: X mb">
+                        <div class="button-wrapper">
+                            <div class="text-boton" data-section="Home" data-value="cv-boton">Descargar Curriculum</div>
+                                <a href="../assets/ejemplo de visualizacion proyecto.pdf" class="icon" target="_blank">
+                                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+                                </a>
+                        </div>
+                    </div>
+                    <button class="button2">
+                        <a class="text-boton2" href="#contacto" data-section="Home" data-value="contacto-boton">Contacto</a>
+                    </button>
+                </div>
+                </div>
+    
+                <div class="containerImg">
+                    <img src="../assets/img/logo portafolio sin fondo.png" alt="foto de perfil" style="width: 450px; height: 450px;">
+                </div>
+            </div>
+            <div class="btns-redes">
+                <button class="Btn mb-4 ml-4" target="_blank" onClick="Redireccion2()">
+                    <span class="svgContainer">
+                    <svg fill="white" viewBox="0 0 496 512" height="1.6em"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                    </span>
+                    <span class="BG"></span>
+                </button>
+        
+                    <button class="Btn ml-4" target="_blank" onClick="Redireccion1()" >
+                    <span class="svgContainer">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(3.55556,3.55556)"><path d="M36,12c13.234,0 24,10.766 24,24c0,13.234 -10.766,24 -24,24c-13.234,0 -24,-10.766 -24,-24c0,-13.234 10.766,-24 24,-24zM29.607,44.898c0,-2.62 0,-8.716 0,-11.335c0,-0.681 -0.552,-1.232 -1.232,-1.232c-0.391,0 -0.824,0 -1.215,0c-0.681,0 -1.232,0.552 -1.232,1.232c0,2.62 0,8.716 0,11.335c0,0.681 0.552,1.232 1.232,1.232c0.391,0 0.824,0 1.215,0c0.68,0 1.232,-0.551 1.232,-1.232zM27.767,29.571c1.015,0 1.84,-0.825 1.84,-1.84c0,-1.015 -0.825,-1.84 -1.84,-1.84c-1.015,0 -1.84,0.825 -1.84,1.84c0,1.015 0.824,1.84 1.84,1.84zM47.087,44.915c0,-2.197 0,-6.604 0,-6.604c0,-3.303 -2.677,-5.98 -5.98,-5.98c-1.608,0 -3.065,0.638 -4.14,1.671v-0.455c0,-0.671 -0.544,-1.216 -1.216,-1.216c-0.401,0 -0.847,0 -1.249,0c-0.671,0 -1.216,0.544 -1.216,1.216c0,2.616 0,8.753 0,11.369c0,0.671 0.544,1.216 1.216,1.216c0.401,0 0.847,0 1.249,0c0.672,0 1.216,-0.544 1.216,-1.216c0,-1.98 0,-5.684 0,-5.684c0,-1.771 1.449,-3.22 3.22,-3.22c1.771,0 3.22,1.449 3.22,3.22v5.684c0,0.671 0.544,1.216 1.216,1.216c0.401,0 0.847,0 1.249,0c0.67,-0.002 1.215,-0.546 1.215,-1.217z"></path></g></g>
+                        </svg>
+                    </span>
+                    <span class="BG"></span>
+                    </button>
+
+
+                    <script>
+                            function Redireccion1(){
+                                window.location.href ="https://www.linkedin.com/in/samuel-marcano-netgen/"
+                            }
+                            function Redireccion2(){
+                                window.location.href ="https://github.com/SamuelMarcano15"
+                            }
+                    </script>
+            </div>
+        </section>
+        
+        <section class="bg-white items-center" id="sobremi">
+            <div class="title-aboutMe">
+                <h2 class="text-5xl font-bold flex justify-center pt-28" data-section="AcercaDeMi" data-value="titulo">Sobre Mí</h2>
+            </div>
+            <div class="container-aboutMe flex justify-between mt-28">
+                <div class="aboutMe-img ">
+                    <img class="pb-12" src="../assets/img/logo portafolio azul.png" alt="foto de perfil" style="width: 450px; height: 450px;">
+                </div>
+                <div class="infMe w-2/4">
+                    <span class="font-bold text-3xl">
+                        "SAMUEL MARCANO"
+                    </span>
+                    <p class="text-left text-2xl" data-section="AcercaDeMi" data-value="descripcion">
+                        Soy estudiante de Ingeniería de Sistemas con experiencia en desarrollo web, sistemas, diseño UX/UI y tecnologías esenciales para un desarrollo óptimo. Estoy enfocado en el desarrollo frontend. Siempre he sido capaz de manejarme en entornos orientados al trabajo en equipo, buscando constantemente soluciones a los problemas e innovación. Me esfuerzo continuamente por mejorar mis habilidades y aplicarlas a proyectos que tengan un impacto positivo en los usuarios.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-slate-900" id="formacion">
+            <div class="title-formation">
+                <h2 class="text-5xl text-white font-bold flex justify-center pt-28 pb-12" data-section="Formacion" data-value="titulo">Formación</h2>
+            </div>
+            <div class="container-formation items-center mt-32 flex justify-around">
+                <div class="card">
+                    <div class="card-details">
+                        <p class="text-title">Universidad de Margarita</p>
+                        <img class="size-36 mx-auto mt-4" src="../assets/img/Logo unimar.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <p class="text-title">HackerRank</p>
+                        <img class="size-36 mx-auto mt-4 rounded-2xl" src="../assets/img/logo HackerRank.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <p class="text-title">Grow whit Google</p>
+                        <img class="size-36 mx-auto mt-4" src="../assets/img/grow_with-google.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+
+        <section class="bg-white items-center" id="habilidades">
+            <div class="title-hability">
+                <p class="text-5xl  font-bold flex justify-center pt-28 pb-12" data-section="Habilidades" data-value="titulo">Habilidades</p>
+            </div>
+            <div class="container-formation items-center mt-10 mb-8 flex justify-around">
+                <div class="card">
+                    <div class="card-details">
+                        <p class="text-title">Bootstrap</p>
+                        <img class="size-36 mx-auto mt-4" src="../assets/img/logo bootstrap.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <p class="text-title">Tailwind Css</p>
+                        <img class="size-36 mx-auto mt-4 rounded-2xl" src="../assets/img/logo tailwind.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <p class="text-title">Figma</p>
+                        <img class="size-32 mx-auto mt-4" src="../assets/img/logo figma.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-formation items-center flex justify-around">
+                <div class="card">
+                    <div class="card-details">
+                        <p class="text-title">React</p>
+                        <img class="size-36 mx-auto mt-4" src="../assets/img/logo react.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <p class="text-title">Vue</p>
+                        <img class="size-36 mx-auto mt-4" src="../assets/img/logo vue.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-details">
+                        <p class="text-title">Git</p>
+                        <img class="size-36 mx-auto mt-4" src="../assets/img/logo git.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        </section>
+
+        <section class="bg-slate-900" id="proyectos">
+            <div class="title-proyects">
+                <p class="text-white text-5xl  font-bold flex justify-center pt-28 pb-12" data-section="Proyectos" data-value="titulo">Mis Proyectos</p>
+            </div>
+            <div class="container-formation items-center mt-32 flex justify-around">
+                <div class="card2">
+                    <div class="card-details2">
+                        <p class="text-title text-center mb-6">Portafolio Web</p>
+                        <img src="../assets/img/imagen portafolio.png" alt="" style="width: 100%; height: 145px; margin-bottom: 1.5rem;">
+                        <div class="btns-proyect flex justify-around">
+                            <button class="button2 mr-2">
+                                <a class="text-boton2 text-nowrap" href="#home" data-section="Proyectos" data-value="btn-verProyecto">Ver proyecto</a>
+                            </button>
+                            <button class="button2">
+                                <img src="../assets/img/logo-github.svg" alt="" style="width: 30px; padding-left: 5px;"><a class="text-boton2" href="https://github.com/SamuelMarcano15/Portafolio-web" style="padding-right: 8px;" target="_blank" data-section="Proyectos" data-value="btn-repositorio"> Repositorio</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card-details2">
+                        <p class="text-title text-center mb-6">Neo Restaurant</p>
+                        <img class="rounded-lg" src="../assets/img/Neo restaurante imagen.png" alt="" style="width: 100%; height: 145px; margin-bottom: 1.5rem;">
+                        <div class="btns-proyect flex justify-around">
+                            <button class="button2 mr-2">
+                                <a class="text-boton2 text-nowrap" href="../assets/WEBSITE NEO RESTAURANTE.pdf" target="_blank" data-section="Proyectos" data-value="btn-verProyecto">Ver proyecto</a>
+                            </button>
+                            <button class="button2">
+                                <img src="../assets/img/logo-github.svg" alt="" style="width: 30px; padding-left: 5px;"><a class="text-boton2" href="https://github.com/Samuelmarcano1509/Restaurant-APP-Frontend" style="padding-right: 8px;" target="_blank" data-section="Proyectos" data-value="btn-repositorio"> Repositorio</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card-details2">
+                        <p class="text-title text-center mb-6">Landing Page Broker</p>
+                        <img class="rounded-lg" src="../assets/img/segunda imagen Broker.png" alt="" style="width: 100%; height: 145px; margin-bottom: 1.5rem;">
+                        <div class="btns-proyect flex justify-around">
+                            <button class="button2 mr-2">
+                                <a class="text-boton2 text-nowrap" href="../assets/Landing Page Broker.pdf" target="_blank" data-section="Proyectos" data-value="btn-verProyecto">Ver proyecto</a>
+                            </button>
+                            <button class="button2">
+                                <img src="../assets/img/logo-github.svg" alt="" style="width: 30px; padding-left: 5px;"><a class="text-boton2" href="https://github.com/SamuelMarcano15/Broker-Landing-Page" style="padding-right: 8px;" target="_blank" data-section="Proyectos" data-value="btn-repositorio"> Repositorio</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white" id="contacto">
+            <div class="title-contact">
+                <p class="text-5xl  font-bold flex justify-center pt-28 pb-12" data-section="Contacto" data-value="titulo">Contacto</p>
+            </div>
+            <form action="https://formsubmit.co/samuelmarcanosalasar@gmail.com" method="POST" class="contact-container bg-slate-800 rounded-2xl flex justify-center mx-auto w-2/3 h-[625px]">
+                <div class="inputs mt-6 text-center mb-16">
+                    <p class="text-xl text-white mb-6" data-section="Contacto" data-value="texto">Completa el formulario para ponerme en contacto contigo lo mas pronto posible</p>
+                    <div class="form-control mb-10"><input placeholder="Nombre | Name" type="text" name="name" class="input">
+                    </div>
+                    <div class="form-control mb-10"><input placeholder="Email" type="email" name="email" class="input">
+                    </div>
+                    <div class="form-control mb-10"><input placeholder="Asunto | Subject" type="text" name="subject" class="input">
+                    </div>
+                    <div class="form-control mb-4"><textarea placeholder="Escribe tu mensaje | Write your message" name="message" class="input2"></textarea>
+                    </div>
+                    <button class="btn-formulario text-center m-auto" id="btn-enviar" type="submit" data-section="Contacto" data-value="btn-enviar">Enviar</button>
+                    
+                    
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/src/">
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+                
+                
+            </form>
+            
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 h-44">
+        <div class="btns-redes flex justify-center mt-6">
+            <button class="Btn mb-4 ml-4">
+                <span class="svgContainer">
+                <svg fill="white" viewBox="0 0 496 512" height="1.6em"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                </span>
+                <span class="BG"></span>
+                </button>
+    
+                <button class="Btn ml-4">
+                <span class="svgContainer">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(3.55556,3.55556)"><path d="M36,12c13.234,0 24,10.766 24,24c0,13.234 -10.766,24 -24,24c-13.234,0 -24,-10.766 -24,-24c0,-13.234 10.766,-24 24,-24zM29.607,44.898c0,-2.62 0,-8.716 0,-11.335c0,-0.681 -0.552,-1.232 -1.232,-1.232c-0.391,0 -0.824,0 -1.215,0c-0.681,0 -1.232,0.552 -1.232,1.232c0,2.62 0,8.716 0,11.335c0,0.681 0.552,1.232 1.232,1.232c0.391,0 0.824,0 1.215,0c0.68,0 1.232,-0.551 1.232,-1.232zM27.767,29.571c1.015,0 1.84,-0.825 1.84,-1.84c0,-1.015 -0.825,-1.84 -1.84,-1.84c-1.015,0 -1.84,0.825 -1.84,1.84c0,1.015 0.824,1.84 1.84,1.84zM47.087,44.915c0,-2.197 0,-6.604 0,-6.604c0,-3.303 -2.677,-5.98 -5.98,-5.98c-1.608,0 -3.065,0.638 -4.14,1.671v-0.455c0,-0.671 -0.544,-1.216 -1.216,-1.216c-0.401,0 -0.847,0 -1.249,0c-0.671,0 -1.216,0.544 -1.216,1.216c0,2.616 0,8.753 0,11.369c0,0.671 0.544,1.216 1.216,1.216c0.401,0 0.847,0 1.249,0c0.672,0 1.216,-0.544 1.216,-1.216c0,-1.98 0,-5.684 0,-5.684c0,-1.771 1.449,-3.22 3.22,-3.22c1.771,0 3.22,1.449 3.22,3.22v5.684c0,0.671 0.544,1.216 1.216,1.216c0.401,0 0.847,0 1.249,0c0.67,-0.002 1.215,-0.546 1.215,-1.217z"></path></g></g>
+                    </svg>
+                </span>
+                <span class="BG"></span>
+                </button>
+        </div>
+        <div class="information-footer">
+            <p class="text-white text-xl text-center">Copyright - 2024 | GusMaquetador</p>
+        </div>
+        </div>
+        
+
+
+    </footer>
+    
+    <script src="../assets/scripts/script.js"></script>
+</body>
+</html>

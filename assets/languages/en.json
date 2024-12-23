@@ -1,0 +1,38 @@
+{
+    "navbar": {
+        "item1": "home",
+        "item2": "About me",
+        "item3": "Training",
+        "item4": "Skills",
+        "item5": "Proyects",
+        "item6":"Contact"
+    },
+    "Home" :{
+        "saludo": "Hello World! i'm",
+        "rol": "FRONT-END WEB DEVELOPER'",
+        "descripcion": "As a Systems Engineering student, I specialize in frontend development, systems, and UX/UI. I am committed to finding the optimal solutions to create exceptional end products.",
+        "cv-boton": "Download CV",
+        "contacto-boton": "Contact"
+    },
+    "AcercaDeMi":{
+        "titulo": "About me",
+        "descripcion": "I am a Systems Engineering student with experience in web development, systems, UX/UI design, and essential technologies for optimal development. I am focused on frontend development. I have always been able to thrive in team-oriented environments, constantly seeking solutions to problems and innovation. I am continually striving to improve my skills and apply them to projects that have a positive impact on users." 
+    },
+    "Formacion":{
+        "titulo": "Training"
+    },
+    "Habilidades":{
+        "titulo": "Skills"
+    },
+    "Proyectos":{
+        "titulo": "Proyects",
+        "btn-verProyecto": "View Project",
+        "btn-repositorio": "Repository"
+    },
+    "Contacto":{
+        "titulo": "Contact",
+        "texto": "Fill out the form to get back to you as soon as possible",
+        "btn-enviar": "Send"
+    }
+
+}

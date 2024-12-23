@@ -1,0 +1,38 @@
+{
+    "navbar": {
+        "item1": "home",
+        "item2": "Acerca de mi",
+        "item3": "Formación",
+        "item4": "Habilidades",
+        "item5": "Proyectos",
+        "item6":"Contacto"
+    },
+    "Home" :{
+        "saludo": "Hola mundo! Soy",
+        "rol": "DESARROLLADOR FRONT-END'",
+        "descripcion": "Como estudiante de Ingeniería de Sistemas, me especializo en desarrollo frontend, sistemas y UX/UI. Estoy comprometido con encontrar las soluciones óptimas para crear productos finales excepcionales.",
+        "cv-boton": "Descargar Curriculum",
+        "contacto-boton": "Contacto"
+    },
+    "AcercaDeMi":{
+        "titulo": "Sobre mí",
+        "descripcion": "Soy estudiante de Ingeniería de Sistemas con experiencia en desarrollo web, sistemas, diseño UX/UI y tecnologías esenciales para un desarrollo óptimo. Estoy enfocado en el desarrollo frontend. Siempre he sido capaz de manejarme en entornos orientados al trabajo en equipo, buscando constantemente soluciones a los problemas e innovación. Me esfuerzo continuamente por mejorar mis habilidades y aplicarlas a proyectos que tengan un impacto positivo en los usuarios." 
+    },
+    "Formacion":{
+        "titulo": "Formación"
+    },
+    "Habilidades":{
+        "titulo": "Habilidades"
+    },
+    "Proyectos":{
+        "titulo": "Proyectos",
+        "btn-verProyecto": "Ver Proyecto",
+        "btn-repositorio": "Repositorio"
+    },
+    "Contacto":{
+        "titulo": "Contacto",
+        "texto": "Completa el formulario para ponerme en contacto contigo lo mas pronto posible",
+        "btn-enviar": "Enviar"
+    }
+
+}
